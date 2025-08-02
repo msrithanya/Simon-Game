@@ -4,6 +4,7 @@ var arr=["one","two","three","four"]
     var count=1-start;
     var c=0;
     function starts(){
+        document.getElementById("pop").style.display="none"
        if((document.getElementById("title").innerHTML=="Restart")){
         start=1;
         simon()
@@ -13,10 +14,8 @@ var arr=["one","two","three","four"]
     }
   }
     function simon(){
-      // if((document.getElementById("title").innerHTML=="Restart")&& (c==0)){
-      //   start=1;
-      //   c=1;
-      // }
+         document.getElementById("lpop").style.display="none"
+        document.getElementById("wpop").style.display="none"
      document.getElementById("title").innerHTML="Restart";
      document.getElementById("heading").innerHTML="Level "+start;
       cor=[];
@@ -33,7 +32,6 @@ var arr=["one","two","three","four"]
 if(btn.id=="one"){
 btn.setAttribute("class","text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2");
 setTimeout(() => {
-        
         btn.setAttribute("class","btn")
         }, 700);
 }
@@ -71,7 +69,8 @@ function check(){
         if(temp+1==start){
           console.log("win this round");
           start++;
-          simon();
+          document.getElementById("wpop").style.display="flex"
+          
         }
         else{
             count++;
@@ -82,7 +81,11 @@ function check(){
     else{
         console.log("loss")
         start=1;
+         document.getElementById("lpop").style.display="flex"
         document.getElementById("heading").innerHTML="Oops:) Give another try"
         document.getElementById("title").innerHTML="Start Again";
     }
+}
+function popup(){
+  document.getElementById("pop").style.display="flex"
 }
