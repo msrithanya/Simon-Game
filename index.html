@@ -2,19 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Simon Game</title>
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
-   
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
@@ -23,7 +22,7 @@
   <body>
     <div class="header">
         <p class="title press-start-2p-regular" id="heading" style="font-size: 5vh;">Start the Game</p>
-        <div onclick="starts()" class="action"><h1 class=" press-start-2p-regular" id="title">Start</h1></div>
+        <div onclick="popup()" class="action"><h1 class=" press-start-2p-regular" id="title">Start</h1></div>
     </div>
     <div class="cubs">
       <div>
@@ -41,6 +40,38 @@
     <div class="footer">
       <h1 class="title press-start-2p-regular">Done by <span class="great-vibes-regular">Rithanya 🎀</span></h1>
     </div>
+    <div id="pop"  class="popup">
+        <div class="container">
+          <div class="c_title">
+             <h1 class="title press-start-2p-regular" id="heading" style="color: black; font-size: 3vh;">Rules of Simon</h1>
+          </div>
+              
+               <ul>
+                <li class="title press-start-2p-regular" id="heading"style="color: black; font-size: 1.5vh;" >👾	Repeat the sequence of colors in the exact order Simon gives.</li>
+                <li class="title press-start-2p-regular" id="heading"style="color: black; font-size: 1.5vh; margin-top:12px;">👾	Each round, Simon adds one more color to the sequence.</li>
+                <li class="title press-start-2p-regular" id="heading"style="color: black; font-size: 1.5vh; margin-top:12px;">👾	You must repeat the entire sequence in the correct order</li>
+                <li class="title press-start-2p-regular" id="heading"style="color: black; font-size: 1.5vh; margin-top:12px;">👾	The game continues as long as you input the sequence correctly.</li>
+                 <li class="title press-start-2p-regular" id="heading"style="color: red; font-size: 1.5vh; margin-top:12px;">📢	Important: you need to wait until the blink of the button get stop.</li>
+               </ul>
+                <div onclick="starts()" ><h1 class=" press-start-2p-regular" id="startbu">Start</h1></div>
+        </div>   
+    </div>
+     <div id="wpop"  class="wpopup">
+          <div  class="wcontainer" >
+            <h1 class="title press-start-2p-regular" id="heading" style="color: black; font-size: 3vh; ">wow!!🤩	</h1>
+             <h1 class="title press-start-2p-regular" id="heading" style="color: black; font-size: 3vh; ">You win this Level</h1>
+          
+                <div onclick="simon()" ><h1 class=" press-start-2p-regular" id="startbu">Next</h1></div>
+        </div>
+        </div>
+        <div id="lpop"  class="lpopup">
+          <div  class="wcontainer" >
+            <h1 class="title press-start-2p-regular" id="heading" style="color: black; font-size: 3vh; ">ohhh noooo 🙂	</h1>
+             <h1 class="title press-start-2p-regular" id="heading" style="color: black; font-size: 3vh; ">Its ok Darling give another try</h1>
+          
+                <div onclick="simon()" ><h1 class=" press-start-2p-regular" id="startbu">Restart</h1></div>
+        </div>
+        </div>
   </body>
  <script src="script.js"></script>
 </html>
