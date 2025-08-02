@@ -1,6 +1,4 @@
-* {
-        background-color: black;
-      }
+
       .great-vibes-regular {
   font-family: "Great Vibes", cursive;
   font-weight: 400;
@@ -26,6 +24,7 @@
         flex-direction: column;
         height: 100vh;
         justify-content: space-between;
+        background-color: black;
       }
       .header{
         display: flex;
@@ -33,6 +32,7 @@
         height: 29%;
         align-items: center;
         justify-content: center;
+        background-color: black;
       }
       .cubs{
           display: flex;
@@ -57,3 +57,102 @@
       .btn{
         border-radius: 12px;
       }
+      /* #one:hover {
+           background-color:#1450EE;
+}
+ #two:hover {
+           background-color:#00B445;
+}
+ #three:hover {
+           background-color:#84D500;
+}
+ #four:hover {
+           background-color:#E9007D;
+} */
+.popup{
+   background-color: black;
+   position: absolute;
+   top: 0;
+   z-index: 2;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   display: none;
+
+ }
+ .wpopup{
+   background-color: black;
+   position: absolute;
+   top: 0;
+   z-index: 2;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   display: none;
+
+ }
+ .lpopup{
+   background-color: black;
+   position: absolute;
+   top: 0;
+   z-index: 2;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   display: none;
+ }
+ .container{
+  background-color: white;
+  position: absolute;
+  width: 40%;
+  height: 52%;
+     z-index: 4;
+     border-radius: 32px;
+     display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  
+ }
+.wcontainer{
+  background-color: white;
+  position: absolute;
+  width: 50%;
+  height: 44%;
+     z-index: 4;
+     border-radius: 32px;
+     display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  
+ }
+.container h1{
+ width: fit-content;
+ margin-top: 2vh;
+}
+.c_title{
+  display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.container ul{
+  margin-left: 3vw;
+  margin-top: 3vh;
+}
+#startbu{
+  margin-top: 3vh;
+  padding: 12px 24px;
+  color: black;
+  border: black 2px solid ;
+  border-radius: 12px;
+}
+.w_title h1{
+width: fit-content;
+}
